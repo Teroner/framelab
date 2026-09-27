@@ -24,3 +24,6 @@ html{scrollbar-color:#778461 #111217}body{caret-color:var(--lime)}a{text-underli
 .demo-reel{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(270px,.65fr);gap:clamp(24px,4vw,60px);align-items:center;margin:30px 0 44px;padding:24px;background:#222923;border:1px solid #596258;border-radius:14px}
 .demo-reel-frame{overflow:hidden;border-radius:7px;background:#111217}.demo-reel video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.demo-reel figcaption{display:grid;gap:18px;align-content:center}.demo-reel figcaption>span{color:#d7ff72;font-size:12px;letter-spacing:.09em;text-transform:uppercase}.demo-reel h3{margin:0 0 12px;font:700 clamp(28px,3vw,43px)/1.13 Manrope,sans-serif;letter-spacing:-.04em}.demo-reel p{max-width:38ch;margin:0;color:#d3d7d0;font-size:15px;line-height:1.65}.demo-reel figcaption>a{width:max-content;color:#d7ff72;font-weight:700;font-size:14px;text-underline-offset:5px}
 @media(max-width:800px){.demo-reel{grid-template-columns:1fr;margin:26px 0 40px;padding:14px}.demo-reel figcaption{padding:5px 5px 10px}.demo-reel h3{font-size:31px}}
+
+/* Direct-client starting prices, approved by the owner 28.09.2026. */
+.service-body .service-price{display:inline-block;margin:0 0 14px;padding:6px 12px;border-radius:999px;background:#e3f3b8;color:#2d3a1c;font-size:14px;font-weight:600;line-height:1.4}
