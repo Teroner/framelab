@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://teroner.github.io/framelab/sitemap.xml
