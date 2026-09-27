@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <title>Тихий двор — мини-отель · демо-концепт FrameLab</title>
+  <meta name="description" content="Демо-концепт сайта мини-отеля от FrameLab: номера, завтраки, условия и запрос на бронирование.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1f2a24">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="img/hotel-hero.jpg" as="image">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <p class="demo-bar">Демо-концепт <a href="../../">FrameLab</a>: отель вымышленный, цены условные, наличие не проверяется.</p>
+  <header class="top">
+    <a class="logo" href="#top">Тихий двор</a>
+    <nav aria-label="Разделы"><a href="#rooms">Номера</a><a href="#breakfast">Завтраки</a><a href="#terms">Условия</a></nav>
+    <a class="btn btn-small" href="#booking">Забронировать</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-bg" src="img/hotel-hero.jpg" width="1280" height="720" alt="Кирпичный двухэтажный дом с тёплым светом в окнах и цветами у двери">
+      <div class="hero-copy">
+        <h1 id="hero-title">Мини-отель в&nbsp;тихом дворе старого центра</h1>
+        <p>Восемь номеров, домашние завтраки и&nbsp;бесплатная парковка во&nbsp;дворе. Десять минут пешком до&nbsp;вокзала.</p>
+      </div>
+      <form class="finder" aria-label="Проверить наличие" novalidate>
+        <label>Заезд<input name="from" type="date" required></label>
+        <label>Выезд<input name="to" type="date" required></label>
+        <label>Гости<select name="guests"><option>1 гость</option><option selected>2 гостя</option><option>3 гостя</option><option>4 гостя</option></select></label>
+        <button class="btn" type="submit">Проверить наличие</button>
+        <p class="finder-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="rooms" id="rooms" aria-labelledby="rooms-title">
+      <h2 id="rooms-title">Номера</h2>
+      <div class="room-list">
+        <article class="room">
+          <img src="img/hotel-double.jpg" width="1000" height="750" loading="lazy" alt="Двухместный номер: большая кровать с белым бельём и дубовым изголовьем">
+          <div class="room-body">
+            <h3>Двухместный</h3>
+            <p class="price">от <strong>3 900 ₽</strong> за&nbsp;ночь</p>
+            <ul><li>18 м², кровать 160 × 200</li><li>Душ, фен, полотенца</li><li>Рабочий стол, Wi-Fi</li></ul>
+            <a class="link" href="#booking" data-room="Двухместный">Запросить этот номер</a>
+          </div>
+        </article>
+        <article class="room">
+          <img src="img/hotel-family.jpg" width="1000" height="750" loading="lazy" alt="Семейный номер: двуспальная и односпальная кровати, большое окно">
+          <div class="room-body">
+            <h3>Семейный</h3>
+            <p class="price">от <strong>5 400 ₽</strong> за&nbsp;ночь</p>
+            <ul><li>26 м², две кровати</li><li>До&nbsp;трёх гостей, детская кроватка по&nbsp;запросу</li><li>Холодильник и&nbsp;чайник</li></ul>
+            <a class="link" href="#booking" data-room="Семейный">Запросить этот номер</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="breakfast" id="breakfast" aria-labelledby="breakfast-title">
+      <img src="img/hotel-breakfast.jpg" width="1000" height="750" loading="lazy" alt="Сырники со сметаной, ягоды и кофе на деревянном столе">
+      <div>
+        <h2 id="breakfast-title">Завтрак включён</h2>
+        <p>Сырники, каши, омлет и&nbsp;свежая выпечка — готовим утром, из&nbsp;продуктов местных фермеров. Накрываем с&nbsp;8:00 до&nbsp;10:30, ранний завтрак соберём с&nbsp;собой.</p>
+      </div>
+    </section>
+
+    <section class="terms" id="terms" aria-labelledby="terms-title">
+      <h2 id="terms-title">Условия</h2>
+      <dl>
+        <div><dt>Заезд и&nbsp;выезд</dt><dd>Заезд с&nbsp;14:00, выезд до&nbsp;12:00. Ранний заезд — по&nbsp;наличию.</dd></div>
+        <div><dt>Оплата</dt><dd>При заселении: картой, по&nbsp;СБП или наличными.</dd></div>
+        <div><dt>Отмена</dt><dd>Бесплатно, если предупредить за&nbsp;24&nbsp;часа.</dd></div>
+        <div><dt>Парковка</dt><dd>Бесплатно, во&nbsp;дворе за&nbsp;воротами.</dd></div>
+        <div><dt>Животные</dt><dd>Небольших собак и&nbsp;кошек — по&nbsp;согласованию.</dd></div>
+        <div><dt>Документы</dt><dd>Паспорт каждого взрослого гостя.</dd></div>
+      </dl>
+    </section>
+
+    <section class="booking" id="booking" aria-labelledby="booking-title">
+      <div>
+        <h2 id="booking-title">Запрос на&nbsp;бронирование</h2>
+        <p>Администратор ответит в&nbsp;течение 15 минут с&nbsp;8:00 до&nbsp;23:00 и&nbsp;подтвердит номер. Предоплата не&nbsp;нужна.</p>
+      </div>
+      <form class="form" novalidate>
+        <label>Имя<input name="name" autocomplete="name" required maxlength="80"></label>
+        <label>Телефон<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="+7 900 000-00-00"></label>
+        <div class="pair"><label>Заезд<input name="from" type="date" required></label><label>Выезд<input name="to" type="date" required></label></div>
+        <label>Номер<select name="room"><option>Двухместный</option><option>Семейный</option><option>Подберите сами</option></select></label>
+        <label>Комментарий<textarea name="note" rows="3" maxlength="500" placeholder="Поздний заезд, детская кроватка, парковка…"></textarea></label>
+        <label class="check"><input name="consent" type="checkbox" required><span>Даю согласие на&nbsp;обработку данных для бронирования</span></label>
+        <button class="btn" type="submit">Отправить запрос</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="foot"><span class="logo">Тихий двор</span><span>Демо-концепт сайта · <a href="../../">сделано в&nbsp;FrameLab</a></span></footer>
+</body>
+</html>

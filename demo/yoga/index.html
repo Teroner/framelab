@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <title>Прана — йога рядом с домом · демо-концепт FrameLab</title>
+  <meta name="description" content="Демо-концепт лендинга йога-студии от FrameLab: расписание, цены и запись на пробное занятие.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f6f1ea">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="img/yoga-hero.jpg" as="image">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <p class="demo-bar">Демо-концепт <a href="../../">FrameLab</a>: студия вымышленная, цены и адрес условные, форма ничего не отправляет.</p>
+  <header class="top">
+    <a class="logo" href="#top">Прана</a>
+    <nav aria-label="Разделы"><a href="#practice">Практики</a><a href="#schedule">Расписание</a><a href="#prices">Цены</a></nav>
+    <a class="btn btn-small" href="#signup">Записаться</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Йога в&nbsp;пяти минутах от&nbsp;дома</h1>
+        <p class="lead">Небольшие группы до&nbsp;восьми человек и&nbsp;мягкая практика для любого уровня. Первое занятие — бесплатно.</p>
+        <div class="actions"><a class="btn" href="#signup">Записаться на&nbsp;пробное</a><a class="link" href="#schedule">Посмотреть расписание</a></div>
+        <p class="note">Коврики, блоки и&nbsp;пледы выдаём. Утро, вечер и&nbsp;выходные.</p>
+      </div>
+      <figure class="hero-photo"><img src="img/yoga-hero.jpg" width="1280" height="720" alt="Женщина на коврике тянет руки вверх в светлом зале с растениями"></figure>
+    </section>
+
+    <section class="practice" id="practice" aria-labelledby="practice-title">
+      <h2 id="practice-title">Три практики — выберите по&nbsp;самочувствию</h2>
+      <article class="row">
+        <img src="img/yoga-group.jpg" width="1000" height="750" loading="lazy" alt="Группа тянется на ковриках, инструктор проходит между рядами">
+        <div><h3>Хатха для начинающих</h3><p>Базовые позы, дыхание и&nbsp;расслабление в&nbsp;конце. Инструктор подсказывает каждому, поэтому группа не&nbsp;больше восьми человек.</p><p class="meta">75 минут · любой уровень</p></div>
+      </article>
+      <article class="row row-flip">
+        <img src="img/yoga-props.jpg" width="1000" height="750" loading="lazy" alt="Пробковые блоки, ремни, болстеры и коврики на деревянной полке">
+        <div><h3>Растяжка и&nbsp;спина</h3><p>Для тех, кто много сидит. Работаем с&nbsp;осанкой и&nbsp;подвижностью, с&nbsp;блоками и&nbsp;ремнями — без резких движений.</p><p class="meta">60 минут · любой уровень</p></div>
+      </article>
+      <article class="row">
+        <img src="img/yoga-meditation.jpg" width="1000" height="750" loading="lazy" alt="Женщина медитирует на коврике с закрытыми глазами">
+        <div><h3>Медитация и&nbsp;дыхание</h3><p>Спокойная вечерняя практика: дыхательные упражнения и&nbsp;короткая медитация. Помогает переключиться после рабочего дня.</p><p class="meta">45 минут · без подготовки</p></div>
+      </article>
+    </section>
+
+    <section class="schedule" id="schedule" aria-labelledby="schedule-title">
+      <h2 id="schedule-title">Расписание на&nbsp;неделю</h2>
+      <div class="days" role="group" aria-label="День недели"></div>
+      <ul class="slots" aria-live="polite"></ul>
+    </section>
+
+    <section class="prices" id="prices" aria-labelledby="prices-title">
+      <h2 id="prices-title">Цены</h2>
+      <dl class="price-list">
+        <div><dt>Пробное занятие</dt><dd><strong>0 ₽</strong><span>один раз, на&nbsp;любую практику</span></dd></div>
+        <div><dt>Разовое занятие</dt><dd><strong>700 ₽</strong></dd></div>
+        <div class="featured"><dt>8 занятий в&nbsp;месяц</dt><dd><strong>4 400 ₽</strong><span>550 ₽ за&nbsp;занятие · самый популярный</span></dd></div>
+        <div><dt>Безлимит на&nbsp;месяц</dt><dd><strong>6 900 ₽</strong><span>выгодно от&nbsp;трёх занятий в&nbsp;неделю</span></dd></div>
+      </dl>
+    </section>
+
+    <section class="first" aria-labelledby="first-title">
+      <h2 id="first-title">Как пройдёт первое занятие</h2>
+      <ol>
+        <li><h3>Приходите за&nbsp;10 минут</h3><p>Переоденетесь, инструктор спросит о&nbsp;самочувствии и&nbsp;ограничениях.</p></li>
+        <li><h3>Практика в&nbsp;своём темпе</h3><p>Любую позу можно упростить. Никто не&nbsp;ждёт от&nbsp;вас гибкости с&nbsp;первого дня.</p></li>
+        <li><h3>Выберете формат</h3><p>После занятия подскажем, какая практика и&nbsp;абонемент вам подойдут. Покупать сразу не&nbsp;нужно.</p></li>
+      </ol>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Частые вопросы</h2>
+      <details><summary>Что взять с&nbsp;собой?</summary><p>Удобную одежду и&nbsp;воду. Коврики, блоки и&nbsp;пледы есть в&nbsp;студии, есть раздевалка и&nbsp;душ.</p></details>
+      <details><summary>Мне нужна подготовка?</summary><p>Нет. Хатха и&nbsp;медитация рассчитаны на&nbsp;новичков, инструктор предложит упрощённый вариант каждой позы.</p></details>
+      <details><summary>Можно ли заниматься при болях в&nbsp;спине?</summary><p>Расскажите о&nbsp;них инструктору до&nbsp;занятия. При травмах и&nbsp;хронических болях сначала посоветуйтесь с&nbsp;врачом.</p></details>
+      <details><summary>Как перенести занятие?</summary><p>Напишите нам минимум за&nbsp;3&nbsp;часа — занятие по&nbsp;абонементу сохранится.</p></details>
+    </section>
+
+    <section class="signup" id="signup" aria-labelledby="signup-title">
+      <div class="signup-copy">
+        <h2 id="signup-title">Запишитесь на&nbsp;пробное</h2>
+        <p>Администратор перезвонит в&nbsp;течение часа, подберёт время и&nbsp;практику.</p>
+        <p class="address">ул. Садовая, 12, 2&nbsp;этаж · ежедневно 8:00–22:00</p>
+      </div>
+      <form class="form" novalidate>
+        <label>Имя<input name="name" autocomplete="given-name" required maxlength="60"></label>
+        <label>Телефон<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="+7 900 000-00-00"></label>
+        <label>Практика<select name="practice"><option>Хатха для начинающих</option><option>Растяжка и спина</option><option>Медитация и дыхание</option><option>Пока не знаю</option></select></label>
+        <label class="check"><input name="consent" type="checkbox" required><span>Даю согласие на&nbsp;обработку имени и&nbsp;телефона для записи</span></label>
+        <button class="btn" type="submit">Записаться</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="foot"><span class="logo">Прана</span><span>Демо-концепт лендинга · <a href="../../">сделано в&nbsp;FrameLab</a></span></footer>
+</body>
+</html>
