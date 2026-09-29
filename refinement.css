@@ -41,3 +41,11 @@ a.work-tile:hover strong{text-decoration:underline;text-underline-offset:.2em}
 .card-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:760px){.examples .work-grid{grid-template-columns:minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){.work-tile img{transition:none}a.work-tile:hover img{transform:none}}
+/* Explicit offers preserve the existing graphite/lime identity. */
+.offer-line{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(240px,1fr);gap:48px;padding:36px 0;border-top:1px solid #555762}
+.offer-line h3{font-size:clamp(1.5rem,2.5vw,2.3rem);line-height:1.2;margin:0 0 18px;text-wrap:balance}
+.offer-line p{max-width:68ch;color:#d8d9de;line-height:1.6}
+.offer-line details{margin:18px 0}.offer-line summary{cursor:pointer;min-height:44px;padding:10px 0;color:#eef0f4}
+.offer-line a{text-underline-offset:4px}.offer-action{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:18px}
+.offer-action strong{color:#eef0f4}.offer-action a{max-width:100%}.offer-line :focus-visible{outline:3px solid #c5ed73;outline-offset:5px}
+@media(max-width:700px){.offer-line{grid-template-columns:1fr;gap:18px;padding:28px 0}.offer-action{gap:16px}.offer-action .button{width:100%;text-align:center;justify-content:center}}
