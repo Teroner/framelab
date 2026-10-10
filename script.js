@@ -49,3 +49,11 @@ for (const comparison of document.querySelectorAll('.photo-comparison')) {
   update();
   comparison.classList.add('enhanced');
 }
+
+// A portfolio film should never compete with another film's soundtrack.
+const portfolioFilms = [...document.querySelectorAll('.cinema-reel video')];
+for (const film of portfolioFilms) {
+  film.addEventListener('play', () => {
+    for (const other of portfolioFilms) if (other !== film) other.pause();
+  });
+}
