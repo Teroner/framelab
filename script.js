@@ -35,3 +35,17 @@ const resetAll = () => { pending = null; cancelAnimationFrame(frame); frame = 0;
 motionPreference.addEventListener('change', resetAll);
 document.addEventListener('visibilitychange', () => { if (document.hidden) resetAll(); });
 window.addEventListener('blur', resetAll);
+
+// Compare the existing before/after pair; the original composite remains without JS.
+for (const comparison of document.querySelectorAll('.photo-comparison')) {
+  const control = comparison.querySelector('input[type="range"]');
+  if (!control) continue;
+  const update = () => {
+    const value = Math.max(0, Math.min(100, Number(control.value)));
+    comparison.style.setProperty('--reveal', `${value}%`);
+    control.setAttribute('aria-valuetext', `${value} процентов`);
+  };
+  control.addEventListener('input', update);
+  update();
+  comparison.classList.add('enhanced');
+}

@@ -42,6 +42,19 @@ a.work-tile:hover strong{text-decoration:underline;text-underline-offset:.2em}
 @media(max-width:760px){.examples .work-grid{grid-template-columns:minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){.work-tile img{transition:none}a.work-tile:hover img{transform:none}}
 /* Explicit offers preserve the existing graphite/lime identity. */
+.cinema-reel{display:block;padding:0;border:0;background:none;margin-block:58px 78px;border-radius:0}
+.cinema-reel .demo-reel-frame{border-radius:12px;box-shadow:0 22px 50px -20px #0009}
+.cinema-reel figcaption{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;padding-top:25px}
+.cinema-reel figcaption>div{max-width:760px}.cinema-reel p{max-width:65ch}.cinema-reel figcaption>a{flex-shrink:0;margin-top:12px}
+.photo-comparison{width:100%;--reveal:50%}.comparison-stage,.comparison-control{display:none}
+.photo-comparison.enhanced .comparison-fallback{display:none}.photo-comparison.enhanced .comparison-stage{display:block;position:relative;aspect-ratio:1;overflow:hidden;border-radius:18px;background:#fafaf8}
+.comparison-before,.comparison-after{position:absolute;inset:0;background-image:url('./media/work/bg-headphones.jpg');background-size:200% 100%;background-repeat:no-repeat}
+.comparison-before{background-position:left center}.comparison-after{background-position:right center;clip-path:inset(0 0 0 calc(100% - var(--reveal)))}
+.comparison-divider{position:absolute;top:0;bottom:0;left:calc(100% - var(--reveal));width:2px;background:#d7ff72;box-shadow:1px 0 8px #0006}
+.comparison-label{position:absolute;top:16px;color:#fff;background:#172019;padding:5px 10px;border-radius:5px;font-size:13px}.comparison-label.before{left:16px}.comparison-label.after{right:16px}
+.photo-comparison.enhanced .comparison-control{display:flex;align-items:center;gap:18px;padding-block:14px;color:#d3d7d0;font-size:14px}.comparison-control input{min-width:0;flex:1;min-height:44px;accent-color:#c5ed73;cursor:ew-resize}
+.comparison-control input:focus-visible{outline:2px solid #d7ff72;outline-offset:5px}
+@media(max-width:700px){.cinema-reel figcaption{display:block}.cinema-reel figcaption>a{display:inline-block;margin-top:20px}.cinema-reel{margin-block:35px 54px}.photo-comparison.enhanced .comparison-control{gap:12px}}
 .offer-line{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(240px,1fr);gap:48px;padding:36px 0;border-top:1px solid #555762}
 .offer-line h3{font-size:clamp(1.5rem,2.5vw,2.3rem);line-height:1.2;margin:0 0 18px;text-wrap:balance}
 .offer-line p{max-width:68ch;color:#d8d9de;line-height:1.6}
