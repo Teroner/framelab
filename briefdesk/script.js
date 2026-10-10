@@ -12,7 +12,7 @@ function configure() {
  fields.forEach((key,i)=> { document.querySelector(`[data-label="${key}"]`).textContent=flow.labels[i]; form.elements[key].placeholder=flow.hints[i]; });
  document.querySelector('#workflow-steps').replaceChildren(...flow.stages.map(text=>{const li=document.createElement('li');li.textContent=text;return li;}));
  document.querySelector('#acceptance').textContent=flow.acceptance;
- document.querySelector('#telegram').href=`https://t.me/Lumi_FrameLab_bot?start=${flow.key}`;
+ document.querySelector('#telegram').href=`https://t.me/Lumi_FrameLab_bot?start=${flow.telegramKey || flow.key}`;
 }
 const email = document.querySelector('#email');
 const mailbox = 'mukarov.almuz@gmail.com';
